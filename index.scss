@@ -7,6 +7,7 @@
 }
 html {
     min-height: 100%;
+    overflow-x: hidden;
 }
 body {
     color: white;
@@ -41,3 +42,4 @@ img {
 @import "nav";
 @import "interests";
 @import "main";
+@import "contact";

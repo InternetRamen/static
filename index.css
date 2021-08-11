@@ -8,6 +8,7 @@
 
 html {
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -249,5 +250,138 @@ main .main-container .main-item img {
     max-height: 100%;
     max-width: 80%;
   }
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f3f4f5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 200px;
+}
+
+.contact p {
+  color: black;
+  font-size: 20px;
+  width: 30em;
+}
+
+@media screen and (max-width: 728px) {
+  .contact p {
+    width: 20em;
+    text-align: center;
+  }
+}
+
+.contact p a {
+  text-decoration: none;
+}
+
+.contact .c-head {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+.contact .c-head h2 {
+  font-size: 50px;
+  padding-bottom: 10px;
+  padding-right: 200px;
+  padding-left: 20px;
+  color: black;
+  border-bottom: solid 2px black;
+}
+
+@media screen and (max-width: 728px) {
+  .contact .c-head {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .c-head h2 {
+    padding: 0px 20px;
+  }
+}
+
+.contact .c-container {
+  background-color: grey;
+  border-radius: 15px;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.contact .c-container .pageclip-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .c-container .pageclip-form input {
+  width: 40rem;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.contact .c-container .pageclip-form textarea {
+  font-size: 24px;
+  resize: none;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.contact .c-container .pageclip-form button {
+  width: 40%;
+  height: 60px;
+  border: solid 5px white;
+  background-color: darkcyan;
+  border-radius: 15px;
+  color: white;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 728px) {
+  .contact .c-container .pageclip-form input {
+    width: 20rem;
+  }
+}
+
+.contact .c-container .pageclip-form input:focus,
+.contact .c-container .pageclip-form textarea:focus {
+  outline: none;
 }
 /*# sourceMappingURL=index.css.map */
