@@ -13,6 +13,10 @@ $small: 728px;
         z-index: -1;
         width: 150%;
         display: inline-block;
+        @media screen and (max-width: $small) {
+            width: auto;
+            height: 500px;
+        }
     }
     .i-head {
         width: 80%;
@@ -31,7 +35,7 @@ $small: 728px;
                 padding: 0px 20px;
             }
         }
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     .i-container {
         display: flex;

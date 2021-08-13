@@ -13,6 +13,7 @@ html {
 
 body {
   color: white;
+  background-color: black;
   background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
@@ -83,6 +84,13 @@ nav {
   display: inline-block;
 }
 
+@media screen and (max-width: 728px) {
+  .interests svg {
+    width: auto;
+    height: 500px;
+  }
+}
+
 .interests .i-head {
   width: 80%;
   display: -webkit-box;
@@ -91,7 +99,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .interests .i-head h2 {
@@ -259,7 +267,7 @@ main .main-container .main-item img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-top: 30px;
+  padding-top: 150px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -281,11 +289,18 @@ main .main-container .main-item img {
   .contact p {
     width: 20em;
     text-align: center;
+    width: 10em;
   }
 }
 
 .contact p a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 728px) {
+  .contact {
+    padding-top: 100px;
+  }
 }
 
 .contact .c-head {
@@ -316,6 +331,7 @@ main .main-container .main-item img {
   }
   .contact .c-head h2 {
     padding: 0px 20px;
+    font-size: 40px;
   }
 }
 
@@ -324,6 +340,10 @@ main .main-container .main-item img {
   border-radius: 15px;
   margin-top: 30px;
   padding: 20px;
+}
+
+.contact .c-container .pageclip-form--success {
+  color: black !important;
 }
 
 .contact .c-container .pageclip-form {

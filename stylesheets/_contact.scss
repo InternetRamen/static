@@ -2,7 +2,7 @@ $small: 728px;
 .contact {
     display: flex;
     justify-content: flex-start;
-    padding-top: 30px;
+    padding-top: 150px;
     align-items: center;
     background-color: #f3f4f5;
     flex-direction: column;
@@ -15,10 +15,14 @@ $small: 728px;
         @media screen and (max-width: $small) {
             width: 20em;
             text-align: center;
+            width: 10em;
         }
         a {
             text-decoration: none;
         }
+    }
+    @media screen and (max-width: $small) {
+         padding-top: 100px;
     }
     .c-head {
         width: 80%;
@@ -37,6 +41,7 @@ $small: 728px;
             justify-content: center;
             h2 {
                 padding: 0px 20px;
+                font-size: 40px;
             }
         }
         margin-bottom: 50px;
@@ -47,7 +52,7 @@ $small: 728px;
         margin-top: 30px;
         padding: 20px;
         .pageclip-form--success {
-            color:black !important;
+            color: black !important;
         }
         .pageclip-form {
             display: flex;
