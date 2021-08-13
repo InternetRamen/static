@@ -32,13 +32,19 @@ main {
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            @media screen and (max-width: $small) {
+                h1 {
+                    font-size: 50px;
+                    line-height: 100%;
+                }
+            }
             img {
                 max-height: 100%;
                 width: auto;
                 border-radius: 15px;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
                     0 6px 20px 0 rgba(0, 0, 0, 0.19), 30px 30px white;
-  
+
                 @media screen and (max-width: $small) {
                     box-shadow: 10px 10px white;
                     max-height: 100%;

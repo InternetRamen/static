@@ -249,6 +249,13 @@ main .main-container .main-item {
           flex-direction: column;
 }
 
+@media screen and (max-width: 728px) {
+  main .main-container .main-item h1 {
+    font-size: 50px;
+    line-height: 100%;
+  }
+}
+
 main .main-container .main-item img {
   max-height: 100%;
   width: auto;
