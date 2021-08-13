@@ -14,8 +14,8 @@ html {
 
 body {
   color: white;
-  background-color: black;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 50%);
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
 }
@@ -33,18 +33,18 @@ body {
 h1 {
   font-size: 70px;
   line-height: 50%;
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
   font-weight: 600;
 }
 
 h2 {
   font-size: 25px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h3 {
   font-size: 40px;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 400;
 }
 
@@ -159,8 +159,7 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+  background-color: darkgrey;
   border-radius: 15px;
   overflow: hidden;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -209,8 +208,8 @@ main svg {
   z-index: -1;
   top: 0;
   left: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-60%, -50%);
+          transform: translate(-60%, -50%);
 }
 
 main .main-container {
@@ -342,7 +341,8 @@ main .main-container .main-item img {
 }
 
 .contact .c-container {
-  background-color: grey;
+  background-color: #b1bfd8;
+  background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
   border-radius: 15px;
   margin-top: 30px;
   padding: 20px;
@@ -372,32 +372,86 @@ main .main-container .main-item img {
   width: 40rem;
   height: 40px;
   font-size: 24px;
-  border-radius: 15px;
   border: none;
+  border-bottom: solid 2px white;
   margin-bottom: 20px;
+  color: white;
   padding: 10px;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.contact .c-container .pageclip-form input::-webkit-input-placeholder {
+  color: #e6e6e6;
+}
+
+.contact .c-container .pageclip-form input:-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.contact .c-container .pageclip-form input::-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.contact .c-container .pageclip-form input::placeholder {
+  color: #e6e6e6;
+}
+
+.contact .c-container .pageclip-form input:-webkit-autofill,
+.contact .c-container .pageclip-form input:-webkit-autofill:hover,
+.contact .c-container .pageclip-form input:-webkit-autofill:focus,
+.contact .c-container .pageclip-form input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s, color 5000s ease-in-out 0s;
 }
 
 .contact .c-container .pageclip-form textarea {
   font-size: 24px;
   resize: none;
-  border-radius: 15px;
   margin-bottom: 20px;
+  border: none;
+  border-bottom: solid 2px white;
   width: 100%;
   max-width: 100%;
   padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+.contact .c-container .pageclip-form textarea::-webkit-input-placeholder {
+  color: #e6e6e6;
+}
+
+.contact .c-container .pageclip-form textarea:-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.contact .c-container .pageclip-form textarea::-ms-input-placeholder {
+  color: #e6e6e6;
+}
+
+.contact .c-container .pageclip-form textarea::placeholder {
+  color: #e6e6e6;
 }
 
 .contact .c-container .pageclip-form button {
   width: 40%;
   height: 60px;
-  border: solid 5px white;
-  background-color: darkcyan;
+  border: none;
+  background-color: white;
+  color: #95a8ca;
   border-radius: 15px;
-  color: white;
+  border: solid 2px white;
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.contact .c-container .pageclip-form button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
 }
 
 @media screen and (max-width: 728px) {

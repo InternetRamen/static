@@ -22,7 +22,7 @@ $small: 728px;
         }
     }
     @media screen and (max-width: $small) {
-         padding-top: 100px;
+        padding-top: 100px;
     }
     .c-head {
         width: 80%;
@@ -47,7 +47,8 @@ $small: 728px;
         margin-bottom: 50px;
     }
     .c-container {
-        background-color: grey;
+        background-color: #b1bfd8;
+        background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
         border-radius: 15px;
         margin-top: 30px;
         padding: 20px;
@@ -65,31 +66,62 @@ $small: 728px;
                 width: 40rem;
                 height: 40px;
                 font-size: 24px;
-                border-radius: 15px;
+
                 border: none;
+                border-bottom: solid 2px white;
                 margin-bottom: 20px;
+                color: white;
                 padding: 10px;
+                padding-bottom: 20px;
+                background-color: rgba($color: #000000, $alpha: 0);
             }
+            input::placeholder {
+                color: rgb(230, 230, 230);
+            }
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover,
+            input:-webkit-autofill:focus,
+            input:-webkit-autofill:active {
+                transition: background-color 5000s ease-in-out 0s,
+                    color 5000s ease-in-out 0s;
+            }
+
             textarea {
                 font-size: 24px;
                 resize: none;
-                border-radius: 15px;
+
                 margin-bottom: 20px;
+                border: none;
+                border-bottom: solid 2px white;
                 width: 100%;
                 max-width: 100%;
                 padding: 10px;
+                background-color: rgba($color: #000000, $alpha: 0);
+                color: white;
+            }
+            textarea::placeholder {
+                color: rgb(230, 230, 230);
             }
             button {
                 width: 40%;
                 height: 60px;
-                border: solid 5px white;
-                background-color: darkcyan;
+                border: none;
+                background-color: white;
+                color: #95a8ca;
+
                 border-radius: 15px;
-                color: white;
+                border: solid 2px white;
                 font-size: 24px;
                 font-family: "Montserrat", sans-serif;
                 cursor: pointer;
+                transition: all 0.2s ease;
+                &:hover {
+                    background-color: rgba($color: #000000, $alpha: 0);
+
+                    color: white;
+                }
             }
+
             @media screen and (max-width: $small) {
                 input {
                     width: 20rem;
