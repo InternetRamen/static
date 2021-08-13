@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Exo:wght@400;600&family=Merriweather+Sans:wght@400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -30,16 +31,21 @@ body {
 }
 
 h1 {
-  font-size: 50px;
-  line-height: 95%;
+  font-size: 70px;
+  line-height: 50%;
+  font-family: 'Exo', sans-serif;
+  font-weight: 600;
 }
 
 h2 {
   font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 40px;
+  font-family: 'Cairo', sans-serif;
+  font-weight: 400;
 }
 
 section {
@@ -247,8 +253,8 @@ main .main-container .main-item img {
   max-height: 100%;
   width: auto;
   border-radius: 15px;
-  -webkit-box-shadow: 30px 30px white;
-          box-shadow: 30px 30px white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 30px 30px white;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19), 30px 30px white;
 }
 
 @media screen and (max-width: 728px) {
