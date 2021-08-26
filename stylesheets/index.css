@@ -12,6 +12,18 @@ html {
   overflow-x: hidden;
 }
 
+@media screen and (min-width: 2560px) {
+  html {
+    zoom: 1.5;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  html {
+    zoom: 2;
+  }
+}
+
 body {
   color: white;
   background-color: #000000;
@@ -368,9 +380,10 @@ main .main-container .main-item img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  font-size: 25px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -380,12 +393,11 @@ main .main-container .main-item img {
   width: 40rem;
   height: 40px;
   font-size: 24px;
+  font-family: "Montserrat", sans-serif;
   border: none;
   border-bottom: solid 2px white;
   margin-bottom: 20px;
   color: white;
-  padding: 10px;
-  padding-bottom: 20px;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -414,14 +426,16 @@ main .main-container .main-item img {
 }
 
 .contact .c-container .pageclip-form textarea {
-  font-size: 24px;
+  font-size: 20px;
   resize: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
   margin-bottom: 20px;
   border: none;
   border-bottom: solid 2px white;
   width: 100%;
   max-width: 100%;
-  padding: 10px;
+  height: 15em;
   background-color: rgba(0, 0, 0, 0);
   color: white;
 }
@@ -448,6 +462,9 @@ main .main-container .main-item img {
   border: none;
   background-color: white;
   color: #95a8ca;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   border-radius: 15px;
   border: solid 2px white;
   font-size: 24px;

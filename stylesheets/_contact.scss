@@ -58,21 +58,21 @@ $small: 728px;
         .pageclip-form {
             display: flex;
             flex-direction: column;
-            align-items: center;
-
+            align-items: left;
+            font-size: 25px;
             justify-content: center;
 
             input {
                 width: 40rem;
                 height: 40px;
                 font-size: 24px;
+                font-family: "Montserrat", sans-serif;
 
                 border: none;
                 border-bottom: solid 2px white;
                 margin-bottom: 20px;
                 color: white;
-                padding: 10px;
-                padding-bottom: 20px;
+
                 background-color: rgba($color: #000000, $alpha: 0);
             }
             input::placeholder {
@@ -87,15 +87,17 @@ $small: 728px;
             }
 
             textarea {
-                font-size: 24px;
-                resize: none;
+                font-size: 20px;
 
+                resize: none;
+                font-family: "Montserrat", sans-serif;
+                letter-spacing: 1px;
                 margin-bottom: 20px;
                 border: none;
                 border-bottom: solid 2px white;
                 width: 100%;
                 max-width: 100%;
-                padding: 10px;
+                height: 15em;
                 background-color: rgba($color: #000000, $alpha: 0);
                 color: white;
             }
@@ -108,7 +110,7 @@ $small: 728px;
                 border: none;
                 background-color: white;
                 color: #95a8ca;
-
+                align-self: center;
                 border-radius: 15px;
                 border: solid 2px white;
                 font-size: 24px;
